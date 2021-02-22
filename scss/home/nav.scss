@@ -1,0 +1,65 @@
+//*I could not figure out why my border was not showing over the hero image*//
+nav {
+  width: 980px;
+  height: 100px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: $site-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+
+  .logo {
+    width: 92px;
+    height: 42px;
+    background-image: url(../images/logo/logo-white.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .links {
+    display: flex;
+    width: 532px;
+    height: 42px;
+    padding-top: 26px;
+    font-family: gill;
+    font-size: 15px;
+    justify-content: space-between;
+  }
+
+  div {
+    &.pipe {
+      background-color: $site-blue;
+      height: 21px;
+      width: 2px;
+    }
+    a {
+      text-decoration: none;
+      color: $site-white;
+      margin: 0 auto;
+      font-size: 15px;
+      font-family: gill;
+    }
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  nav {
+    width: 532px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .logo {
+    margin-top: 40px;
+  }
+
+  .links {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
